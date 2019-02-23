@@ -11,7 +11,7 @@ import java.util.List;
 public class Heater {
     public static void main(String[] args) throws InterruptedException, URISyntaxException, IOException {
 
-        Path tempPoster = Files.createTempDirectory("tempPoster23.jpg");
+        Path tempPoster = Files.createTempDirectory("tempPoster34.jpg");
         Files.copy(Heater.class.getResourceAsStream("/poster34.jpg"), tempPoster, StandardCopyOption.REPLACE_EXISTING);
         System.gc();
 
@@ -22,6 +22,7 @@ public class Heater {
             System.err.println("-- " + ++counter);
             System.err.println("free memory: " + Runtime.getRuntime().freeMemory());
             System.err.println("total memory: " + Runtime.getRuntime().totalMemory());
+            System.err.println("max memory: " + Runtime.getRuntime().maxMemory());
 
             manyData.add(Files.readAllBytes(tempPoster));
 
