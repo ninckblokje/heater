@@ -9,7 +9,7 @@ To print the configured values in the JVM add: `-XX:+PrintFlagsFinal`.
 The Docker container can be be pulled from: `ninckblokje/heater`. For Kubernetes `pod.yaml` is included.
 
 Notes:
-- The JVM is AdoptOpenJDK 8, version 202
+- The JVM is JDK 17
 - All the output is in KB
 - The JVM will take about 25% of the RAM as heap per default
 - A JVM requires memory for heap, non heap and other thins like sockets
